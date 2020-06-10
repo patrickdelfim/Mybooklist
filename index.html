@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book List</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="./script/index.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="logo__session">
+        <h1 class="title">My book List</h1>
+      </div>
+
+      <div class="msg" id="formFeedback"></div>
+
+      <form class="formBooks" id="bookForm">
+        <label for="title">Title:</label>
+        <input type="text" id="title" class="form__input" id="title" />
+
+        <label for="author">Author:</label>
+        <input type="text" id="author" class="form__input" id="author" />
+
+        <label for="isbn">ISBN#:</label>
+        <input type="text" id="isbn" class="form__input" id="isbn" />
+
+        <input
+          type="submit"
+          value="add book"
+          class="btn btn__primary btn__block"
+          id="bookForm"
+        />
+      </form>
+
+      <table class="booklist" id="bookTable">
+        <tr class="booklist__row">
+          <th class="booklist__item">Title</th>
+          <th class="booklist__item">Author</th>
+          <th class="booklist__item">ISBN#</th>
+        </tr>
+
+        <!--
+        <tr class="booklist__row" data-ID="3">
+          <td class="booklist__item">O pequeno principe</td>
+          <td class="booklist__item">Antoine</td>
+          <td class="booklist__item">9781742851372</td>
+          <td class="btn__delete">x</td> 
+        </tr>-->
+      </table>
+    </div>
+  </body>
+</html>
